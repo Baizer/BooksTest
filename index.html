@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Test</title>
+    <meta name="description" content="Test">
+    <meta name="author" content="Danil Lysakov">
+    <link rel="stylesheet" href="css/app.css">
+    <style type="text/css"></style>
+  </head>
+
+<body>
+  <div id="modalRegion">
+  </div>
+  <div id="wrap">
+    <header role="title">
+      <nav id="headerRegion"></nav>
+    </header>
+    <main id="content" role="main" >
+      <div id="tableRegion">
+      </div>
+    </main>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/1.8.0/backbone.marionette.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <script type="text/html" id="itemTemplate">
+      <td><%=id%></td><td><%=name%></td><td><%=author%></td><td><%=date%></td><td><%=number%></td>
+  </script>
+
+  <script type="text/html" id="tableTemplate">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Название</td>
+        <td>Авторы</td>
+        <td>Дата выпуска</td>
+        <td>Серийный номер</td>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </script>
+
+  <script type="text/html" id="headerTemplate">
+    <span>Title</span>
+  </script>
+
+  <script type="text/html" id="modalTemplate">
+    <div class="close">X</div>
+    <div class="name"><%=name%></div>
+    <img src="<%=img%>">
+    <div class="requisites">Автор: <%=author%> | Год выпуска: <%=date%> | Номер: <%=number%></div>
+    <div class="description"><%=description%></div>
+  </script>
+
+  </body>
+</html>
